@@ -119,10 +119,7 @@
 .player-bar{
   height:80px;
   background-color:#282828;
-  position:fixed;
-  bottom:0;
-  right:0;
-  left:0;
+  width:100%;
 }
 /* /footer */
 
