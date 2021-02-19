@@ -28,7 +28,6 @@
   padding-top:20px;
   display:flex;
   flex-direction: column;
-  justify-content: space-between;
 }
     /* layout logo */
     .logo{
@@ -43,9 +42,9 @@
       font-size:40px;
       display:none;
     }
-    /* layout logo */
+    /* /layout logo */
 
-    /* layout menu */
+    /* layout menu left bar */
     .menu{
       padding:0 20px;
     }
@@ -55,7 +54,6 @@
     .menu li{
       list-style: none;
       padding:5px 20px;
-
     }
     a {
       color:#696969;
@@ -65,19 +63,24 @@
     .menu li i{
       font-size:24px;
     }
+    /* hover effect */
     .hov-effect li:hover a{
       color:#fff;
     }
     .hov-effect  li:hover{
       border-left:3px solid #ADFF2F;
     }
+    /* /hover effect */
     .menu h3{
       padding-left:20px;
-      margin-top:20px;
+      margin-top:10px;
     }
+
+    /* user part */
     .utente{
       padding-left:40px;
       padding-right:10px;
+      margin-top:auto;
     }
     .utente hr{
       margin:10px 0;
@@ -92,7 +95,9 @@
     background-color: #808080;
     font-size: 24px;
     }
-    /* /layout menu */
+    /* /user part */
+
+    /* /layout menu left bar */
 
 /* /side bar */
 
@@ -152,6 +157,12 @@
   }
   .top-bar{
     left:50px;
+  }
+  .playlist-bar{
+    display:none;
+  }
+  .utente{
+    display:none;
   }
 }
 /* /responsive */
