@@ -206,11 +206,36 @@
 
 /* popular songs */
 .popular-songs .album {
-  border-radius:calc(100% / 2);
+  border-radius:100%;
   overflow:hidden;
 }
-
 /* popular songs */
+
+/* overlay effect */
+.album{
+  position:relative;
+}
+.overlay-effect{
+  position:absolute;
+  background-color:rgba(0,0,0,0.8);
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  display:none;
+}
+.overlay-effect i{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size: 56px;
+}
+.music-box:hover .overlay-effect{
+  display:block;
+}
+
+/* /overlay effect */
 
 /* /main part */
 
