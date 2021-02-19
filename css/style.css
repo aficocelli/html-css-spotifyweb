@@ -168,13 +168,12 @@
   padding: 10px 20px;
   width:100%;
 }
-.recently h2{
-  margin-bottom:20px;
-}
+
 .song-list{
   display:flex;
   justify-content: flex-start;
   flex-wrap:wrap;
+  padding: 15px 0;
 
 }
 .music-box{
@@ -190,14 +189,19 @@
   color:#696969;
   font-weight: 600;
 }
-.album{
-
-}
 .album img{
   width:100%;
 }
+
 /* /ascoltate di recente */
 
+/* playlist user */
+.recently p:first-of-type{
+  color:#696969;
+  font-size:14px;
+  font-weight: 600;
+  margin-top:5px;
+}
 /* /main part */
 
 /* footer */
