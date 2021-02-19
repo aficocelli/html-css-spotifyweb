@@ -144,6 +144,7 @@
   list-style: none;
   justify-content: center;
   text-transform: uppercase;
+  flex-wrap: wrap;
 }
 .main-menu ul li{
   padding: 10px 10px;
@@ -161,6 +162,38 @@
 
 }
 /* /menu principale  */
+
+/* ascoltate di recente */
+.recently{
+  padding: 10px 20px;
+}
+.recently h2{
+  margin-bottom:20px;
+}
+.song-list{
+  display:flex;
+  justify-content: space-between;
+}
+.music-box{
+  width:calc((100% - 80px) / 6);
+}
+.music-box h3{
+  font-size:16px;
+  padding: 10px 0;
+}
+.music-box p{
+  font-size:14px;
+  color:#696969;
+  font-weight: 600;
+}
+.album{
+  height:200px;
+}
+.album img{
+  width:100%;
+  height:100%;
+}
+/* /ascoltate di recente */
 
 /* /main part */
 
@@ -207,6 +240,9 @@
   }
   .utente{
     display:none;
+  }
+  .main-part{
+    width:calc(100% - 50px);
   }
 }
 /* /responsive */
