@@ -155,103 +155,91 @@ button{
   height:calc(100% - 160px);
   width:calc(100% - 200px);
 }
-/* menu principale  */
-.main-menu ul{
-  display:flex;
-  list-style: none;
-  justify-content: center;
-  text-transform: uppercase;
-  flex-wrap: wrap;
-}
-.main-menu ul li{
-  padding: 10px 10px;
-}
-.main-menu ul li:hover::after{
-  content: "";
-  display:block;
-  margin: 0 auto;
-  background-color:#ADFF2F;
-  height:3px;
-  width:50%;
-  margin-top:5px;
-}
+  /* menu principale  */
 
-/* /menu principale  */
+  .main-menu ul{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+  }
+  .main-menu ul li{
+    padding: 10px 10px;
+  }
+  .main-menu ul li:hover::after{
+    content: "";
+    display:block;
+    margin: 0 auto;
+    background-color:#ADFF2F;
+    height:3px;
+    width:50%;
+    margin-top:5px;
+  }
+  /* /menu principale  */
 
-/* ascoltate di recente */
-.recently{
-  padding: 10px 20px;
-  width:100%;
-}
+  /* ascoltate di recente */
+  .recently{
+    padding: 10px 20px;
+  }
+  .song-list{
+    display:flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    padding: 15px 0;
 
-.song-list{
-  display:flex;
-  justify-content: flex-start;
-  align-items:flex-start;
-  flex-wrap:wrap;
-  padding: 15px 0;
+  }
+  .music-box{
+    width:calc( (100% / 6) - 20px);
+    margin: 0 10px;
+  }
+  .music-box h3{
+    font-size:16px;
+    padding: 10px 0;
+  }
+  .music-box p, .recently p:first-of-type{
+    font-size:14px;
+    color:#696969;
+    font-weight: 600;
+  }
+  .album img{
+    width:100%;
+  }
+  /* /ascoltate di recente */
 
-}
-.music-box{
-  width:calc( (100% / 6) - 20px);
-  margin: 0 10px;
-}
-.music-box h3{
-  font-size:16px;
-  padding: 10px 0;
-}
-.music-box p{
-  font-size:14px;
-  color:#696969;
-  font-weight: 600;
-}
-.album img{
-  width:100%;
-}
+  /* popular songs */
+  .popular-songs .album {
+    border-radius:100%;
+    overflow:hidden;
+  }
+  /* popular songs */
 
-/* /ascoltate di recente */
+  /* album overlay effect */
+  .album{
+    position:relative;
+  }
+  .overlay-effect{
+    position:absolute;
+    background-color:rgba(0,0,0,0.8);
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    display:none;
+  }
+  .overlay-effect i{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 56px;
+  }
+  .music-box:hover .overlay-effect{
+    display:block;
+  }
 
-/* playlist user */
-.recently p:first-of-type{
-  color:#696969;
-  font-size:14px;
-  font-weight: 600;
-  margin-top:5px;
-}
-/* /playlist user */
-
-/* popular songs */
-.popular-songs .album {
-  border-radius:100%;
-  overflow:hidden;
-}
-/* popular songs */
-
-/* overlay effect */
-.album{
-  position:relative;
-}
-.overlay-effect{
-  position:absolute;
-  background-color:rgba(0,0,0,0.8);
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
-  display:none;
-}
-.overlay-effect i{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  font-size: 56px;
-}
-.music-box:hover .overlay-effect{
-  display:block;
-}
-
-/* /overlay effect */
+  /* /album overlay effect */
 
 /* /main part */
 
