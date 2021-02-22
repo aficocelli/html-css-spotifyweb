@@ -28,6 +28,7 @@
   padding-top:20px;
   display:flex;
   flex-direction: column;
+  overflow: hidden;
 }
     /* layout logo */
     .logo{
@@ -63,10 +64,28 @@
     }
     .menu li i{
       font-size:24px;
+      vertical-align: sub;
     }
     .menu img{
       height:25px;
       vertical-align: sub;
+    }
+    .new-playlist{
+      padding-left:40px;
+      padding-top:10px;
+    }
+    .new-playlist h3{
+      padding-bottom:10px;
+    }
+    .new-playlist button{
+      background-color:transparent;
+      border:none;
+      color:#696969;
+      font-size:18px;
+      font-weight: 600;
+    }
+    .new-playlist button i{
+      font-size:32px;
     }
     /* hover effect */
     .hov-effect li:hover a{
@@ -75,11 +94,8 @@
     .hov-effect  li:hover{
       border-left:3px solid #ADFF2F;
     }
+
     /* /hover effect */
-    .menu h3{
-      padding-left:20px;
-      margin-top:10px;
-    }
 
     /* user part */
     .utente{
@@ -158,9 +174,7 @@
   width:50%;
   margin-top:5px;
 }
-.main-menu ul li:hover .main-menu ul li::after{
 
-}
 /* /menu principale  */
 
 /* ascoltate di recente */
@@ -392,6 +406,9 @@
     left:50px;
   }
   .playlist-bar{
+    display:none;
+  }
+  .new-playlist{
     display:none;
   }
   .utente{
