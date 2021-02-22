@@ -443,6 +443,18 @@
     width:calc(( 100% / 2) - 20px);
     padding:15px;
   }
+  .time-passed::after{
+    width:50px;
+  }
+  .song-lenght::before{
+    width:100px;
+  }
+  .audio-control::after{
+    width:50px;
+  }
+  .console{
+    display:block;
+  }
 }
 @media screen and (max-width:575px) {
   .left-bar{
@@ -484,6 +496,23 @@
   }
   .main-part{
     width:calc(100% - 50px);
+  }
+  .audio-control::after{
+    display:none;
+  }
+  .titolo{
+    display:block;
+  }
+}
+@media screen and (max-width:300px) {
+  .song-onair{
+    display:none;
+  }
+  .audio-options{
+    display:none;
+  }
+  .top-bar a{
+    padding:10px 20px;
   }
 }
 /* /responsive */
