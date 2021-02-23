@@ -227,26 +227,25 @@ button:focus{
   .album{
     position:relative;
   }
-  .overlay-effect{
+  .album::after{
+    content:"\f144";
+    display:flex;
+    justify-content: center;
+    align-items: center;
     position:absolute;
-    background-color:rgba(0,0,0,0.8);
     top:0;
+    right:0;
     left:0;
     bottom:0;
-    right:0;
-    display:none;
+    background-color: rgba(0,0,0,0.8);
+    font-family: "Font Awesome 5 Free";
+    font-size:46px;
+    opacity:0;
+    transition: opacity 0.6s;
   }
-  .overlay-effect i{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    font-size: 56px;
+  .music-box:hover .album::after{
+    opacity:1;
   }
-  .music-box:hover .overlay-effect{
-    display:block;
-  }
-
   /* /album overlay effect */
 
 /* /main part */
