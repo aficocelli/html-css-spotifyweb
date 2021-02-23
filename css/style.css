@@ -212,6 +212,7 @@ button:focus{
   }
   .album img{
     width:100%;
+    display:block;
   }
   /* /ascoltate di recente */
 
