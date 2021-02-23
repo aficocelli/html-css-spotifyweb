@@ -514,6 +514,9 @@ section{
     .console{
       display:block;
     }
+    .row-btn{
+      margin:0 auto;
+    }
     .row-time-bar{
       margin:0 auto;
     }
