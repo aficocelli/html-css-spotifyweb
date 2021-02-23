@@ -449,6 +449,7 @@ section{
     .row-time-bar{
       padding:0 10px;
       margin:0;
+      width:55%;
     }
     /* /console responsive */
 
@@ -628,3 +629,23 @@ section{
 
 }
 /* /responsive */
+
+
+/* animations player bar */
+.row-time-bar:active .time-passed::after{
+  animation: audio-up 2s linear;
+}
+@keyframes audio-up {
+  0% {width:100px;}
+  50% {width:225px;}
+  100% {width:350px;}
+}
+.row-time-bar:active .song-lenght::before{
+  animation: audio-down 2s linear;
+}
+@keyframes audio-down{
+  0% {width:250px;}
+  50% {width:125px;}
+  100% {width:0px;}
+}
+/* /animations player bar */

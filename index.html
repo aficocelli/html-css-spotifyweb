@@ -188,6 +188,7 @@
 
       <!-- player bar -->
       <footer class="player-bar">
+        <!-- canzone in riproduzione -->
         <div class="song-onair">
           <div class="song-play">
             <a href="">
@@ -203,7 +204,12 @@
             <a class="folder_song" href=""><i class="far fa-folder"></i></a>
           </div>
         </div>
+        <!-- /canzone in riproduzione -->
+
+        <!-- durata canzone + player -->
         <div class="console">
+
+          <!-- player -->
           <div class="row-btn">
             <button><i class="fas fa-random"></i></button>
             <button><i class="fas fa-step-backward"></i></button>
@@ -211,19 +217,46 @@
             <button><i class="fas fa-step-forward"></i></button>
             <button><i class="fas fa-redo-alt"></i></button>
           </div>
+          <!-- /player -->
+
+          <!-- barra durata canzone -->
           <div class="row-time-bar">
+
+            <!-- barra tempo trascorso -->
             <div class="time-passed">0:25</div>
+            <!-- /barra tempo trascorso -->
+
             <button class="btn-song"><i class="fas fa-circle"></i></button>
+
+            <!-- barra tempo restante -->
             <div class="song-lenght">4:35</div>
+            <!-- /barra tempo restante -->
           </div>
+          <!-- /barra durata canzone -->
         </div>
+        <!-- /durata canzone + player -->
+
+        <!-- controlli audio -->
         <div class="audio-options">
           <ul>
-            <li><button class="no_wrap"><i class="fas fa-ellipsis-v"></i> <i class="fas fa-bars"></i></button></li>
-            <li><button><i class="fas fa-desktop"></i></button></li>
-            <li><button><i class="fas fa-volume-up audio-control"></i></button></li>
+            <li>
+              <button class="no_wrap">
+                <i class="fas fa-ellipsis-v"></i> <i class="fas fa-bars"></i>
+              </button>
+            </li>
+            <li>
+              <button>
+                <i class="fas fa-desktop"></i>
+              </button>
+            </li>
+            <li>
+              <button class="btn-audio">
+                <i class="fas fa-volume-up audio-control"></i>
+              </button>
+            </li>
           </ul>
         </div>
+        <!-- /controlli audio -->
       </footer>
       <!-- /player bar -->
     </div>
