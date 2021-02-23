@@ -181,6 +181,9 @@ button:focus{
   .main-menu ul li{
     padding: 10px 10px;
   }
+  .main-menu ul li:hover{
+    border-left:none;
+  }
   .main-menu ul li:hover::after{
     content: "";
     display:block;
@@ -539,4 +542,18 @@ button:focus{
     /* /footer responsive */
 }
 
+@media screen and (max-height:160px) {
+    /* call-top-action nascosta se finestra chiusa in altezza */
+    .top-bar a{
+      display:none;
+    }
+    .player-bar{
+      position:fixed;
+      right:0;
+      bottom:0;
+      left:0;
+    }
+    /* /call-top-action nascosta se finestra chiusa in altezza */
+
+}
 /* /responsive */
