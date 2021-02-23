@@ -316,13 +316,25 @@ button:focus{
     display:flex;
     justify-content: center;
   }
-  .row-time-bar p{
+  .row-time-bar{
     font-size:12px;
+    width:50%;
+    margin:0 auto;
+  }
+  .time-passed, .song-lenght{
+    display:flex;
+    align-items:center;
+  }
+  .btn-song{
+    font-size:14px;
+    display:none;
+    color:#fff;
   }
   /* barre dei vari player */
   .time-passed::after, .song-lenght::before,
   .audio-control::after{
     content:"";
+    font-family: "Font Awesome 5 Free";
     display:inline-block;
     height:4px;
     vertical-align:middle;
@@ -338,8 +350,11 @@ button:focus{
     background-color:#696969;
     margin-right:10px;
   }
-  .time-passed:hover::after{
+  .row-time-bar:hover .time-passed::after{
     background-color:#ADFF2F;
+  }
+  .row-time-bar:hover .btn-song{
+    display:inline-block;
   }
   /* /barre dei vari player */
 
@@ -405,6 +420,7 @@ button:focus{
     }
     .row-time-bar{
       padding:0 10px;
+      margin:0;
     }
     /* /console responsive */
 
@@ -456,6 +472,9 @@ button:focus{
     /* console responsive */
     .console{
       display:block;
+    }
+    .row-time-bar{
+      margin:0 auto;
     }
     /* /console responsive */
 
