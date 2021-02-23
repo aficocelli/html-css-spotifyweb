@@ -159,6 +159,15 @@ button:focus{
   font-size:12px;
   font-weight: bold;
   margin-right:15px;
+  transition: padding 0.4s;
+}
+.top-bar a:hover{
+  background-color:#fff;
+  color:#000;
+  padding: 5px 20px;
+}
+.top-bar a:focus{
+  padding:10px 40px;
 }
 /* /upgrade bar */
 
@@ -261,9 +270,11 @@ section{
     font-size:46px;
     opacity:0;
     transition: opacity 0.6s;
+    transition: font-size 0.6s;
   }
   .music-box:hover .album::after{
     opacity:1;
+    font-size:64px;
   }
   /* /album overlay effect */
 
@@ -302,6 +313,14 @@ section{
   .song-favorite i{
     color:#696969;
     padding: 0 10px;
+  }
+  .fav_song:hover i{
+    color:#ff0000;
+    font-weight:600;
+  }
+  .folder_song:hover i{
+    color:#ffa500;
+    font-weight:600;
   }
   /* /player bar left */
 
