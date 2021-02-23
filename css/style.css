@@ -116,7 +116,7 @@ button:focus{
 
     /* user part */
     .utente{
-      padding:5px 20px;
+      padding:10px 20px;
       margin-top:auto;
     }
     .utente hr{
@@ -168,6 +168,9 @@ button:focus{
   margin-top:80px;
   height:calc(100% - 160px);
   width:calc(100% - 200px);
+}
+section{
+  padding:10px;
 }
   /* menu principale  */
 
@@ -516,9 +519,33 @@ button:focus{
     .menu-xs li{
       padding-bottom:10px;
     }
-    .playlist-bar, .new-playlist, .utente{
+    .menu-xs svg{
+      height:30px;
+    }
+    .menu-xs li:hover .fill_svg{
+      opacity:1;
+    }
+
+    .playlist-bar, .new-playlist, .hide_element{
       display:none;
     }
+    .utente{
+      padding:10px 0px;;
+      text-align:center;
+    }
+    .utente img{
+      margin-right:0;
+      height:30px;
+      width:30px;
+    }
+    .utente a:first-child{
+      font-size:30px;
+      padding:10px 0;
+    }
+    .block_element{
+      display:block;
+    }
+
     /* /left bar responsive */
 
     /* top bar responsive */
@@ -546,8 +573,8 @@ button:focus{
     .song-lenght::before{
       width:100px;
     }
-    .audio-control::after{
-      width:50px;
+    .audio-options button{
+      font-size:14px;
     }
     /* footer responsive */
 }
