@@ -82,7 +82,8 @@ button:focus{
       list-style: none;
       padding:5px 20px;
     }
-    .menu img{
+
+    .menu svg{
       height:25px;
       vertical-align: sub;
     }
@@ -101,6 +102,12 @@ button:focus{
 
     .hov-effect li:hover a{
       color:#fff;
+    }
+    .fill_svg{
+      opacity:0.4;
+    }
+    .hov-effect li:hover .fill_svg{
+      opacity:1;
     }
     .hov-effect  li:hover{
       border-left:3px solid #ADFF2F;
