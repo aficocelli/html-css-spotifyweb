@@ -451,6 +451,18 @@ section{
       margin:0;
       width:55%;
     }
+      /* nuovo effetto */
+    .row-btn{
+      overflow:hidden;
+      width:5%;
+      transition: width 0.5s linear;
+    }
+    .row-btn:hover{
+      width:45%;
+
+    }
+
+      /* /nuovo effetto */
     /* /console responsive */
 
     /* song on air responsive */
