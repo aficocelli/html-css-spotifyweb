@@ -82,6 +82,7 @@ button:focus{
       list-style: none;
       padding:5px 20px;
     }
+
     .menu svg{
       height:25px;
       vertical-align: sub;
@@ -208,6 +209,8 @@ section{
     transform: translateX(-50%);
 }
 
+
+  }
   /* /menu principale  */
 
   /* ascoltate di recente */
@@ -220,6 +223,7 @@ section{
     align-items:flex-start;
     flex-wrap:wrap;
     padding: 15px 0;
+
   }
   .music-box{
     width:calc( (100% / 6) - 20px);
@@ -290,6 +294,7 @@ section{
     display:flex;
     align-items:center;
     width:25%;
+
   }
   .song-play img{
     height:50px;
@@ -388,6 +393,7 @@ section{
     width:25%;
     display:flex;
     align-items:center;
+
   }
   .audio-options ul{
     display:flex;
@@ -427,11 +433,14 @@ section{
   }
     /* console responsive */
     .console{
-      order:-1;
-      width:100%;
-      display:flex;
-      align-items: center;
-      justify-content: center;
+      width:50%;
+      display: flex;
+      flex-direction: column-reverse;
+      height:100%;
+    }
+    .row-btn{
+      margin:0 auto;
+
     }
     .row-btn button{
       font-size:14px;
@@ -441,9 +450,8 @@ section{
       font-size:20px;
     }
     .row-time-bar{
-      padding:0 10px;
-      margin:0;
-      width:55%;
+      margin:0 auto;
+
     }
       /* nuovo effetto */
     .row-btn{
@@ -461,8 +469,8 @@ section{
 
     /* song on air responsive */
     .song-onair{
-      width:50%;
-      height:50%;
+      width:25%;
+
       justify-content: flex-end;
     }
     .song-onair img{
@@ -482,8 +490,8 @@ section{
 
     /* audio options responsive */
     .audio-options{
-      height:50%;
-      width:50%;
+
+      width:25%;
     }
     .audio-options ul{
       justify-content: flex-start;

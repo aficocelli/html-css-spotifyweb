@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpotifyWeb</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- /google font -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- /font awesome -->
+    <link rel="stylesheet" href="css/test.css">
+  </head>
+  <body>
+    <!--container full -->
+    <div class="container">
+
+      <!-- upgrade bar -->
+      <nav class="top-bar">
+        <a href="">effettua l'upgrade</a>
+      </nav>
+      <!-- /upgrade bar -->
+
+      <!-- side bar -->
+      <aside class="left-bar">
+        <div class="nav-bar">
+          <div class="logo">
+            <img src="img/logo.png" alt="logo spotify">
+          </div>
+          <div class="logo-small">
+            <i class="fab fa-spotify"></i>
+          </div>
+          <nav class="menu hov-effect">
+            <ul>
+              <li><a href=""><svg class="fill_svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg> Home</a></li>
+              <li><a href=""><svg class="fill_svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/></svg> Cerca</a></li>
+              <li><a href=""><svg class="fill_svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/></svg> La tua libreria</a></li>
+            </ul>
+          </nav>
+          <nav class="menu-xs text-center">
+            <ul>
+              <li><a class="fill_svg" href=""><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg></a></li>
+              <li><a class="fill_svg" href=""><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/></svg></a></li>
+              <li><a class="fill_svg" href=""><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/></svg></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="new-playlist">
+          <h3>Playlist</h3>
+          <button class="hov-effect"><i class="fas fa-plus-square"></i> Crea Playlist</button>
+        </div>
+        <div class="menu playlist-bar hov-effect overflow-effect">
+          <ul>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+          </ul>
+        </div>
+        <div class="utente">
+          <a class="hov-effect block_element" href="">
+            <i class="far fa-arrow-alt-circle-down"></i>
+          </a>
+          <a class="hov-effect hide_element" href="">Installa app</a>
+          <hr class="hide_element">
+          <a class="block_element" href="">
+            <img class="user-icon" src="img/profile.svg" alt="user icon">
+          </a>
+          <a class="hov-effect hide_element" href="">John Doe</a>
+        </div>
+      </aside>
+      <!-- /side bar -->
+
+      <!-- main part -->
+      <main class="main-part">
+
+        <!-- menu principale main -->
+        <nav class="main-menu hov-effect">
+          <ul>
+            <li><a href="">in evidenza</a></li>
+            <li><a href="">podcast</a></li>
+            <li><a href="">classifiche</a></li>
+            <li><a href="">generi e mood</a></li>
+            <li><a href="">nuove uscite</a></li>
+            <li><a href="">scopri</a></li>
+          </ul>
+        </nav>
+        <!-- /menu principale main -->
+
+        <!-- ascoltate di recente -->
+        <section class="recently">
+          <h2>Recently Played</h2>
+          <div class="song-list">
+            <div class="music-box text-center">
+              <div class="album">
+                <img src="img/metal_lifting.jpg" alt="copertina album metal">
+              </div>
+              <h3>Heavy Metal</h3>
+              <p>Subtitle</p>
+            </div>
+            <div class="music-box text-center">
+              <div class="album">
+                <img src="img/stranger.jpeg" alt="album stranger things">
+              </div>
+              <h3>Stranger things Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+              <p>Kyle Dixon & Michael Stein</p>
+            </div>
+            <div class="music-box text-center">
+              <div class="album">
+                <img src="img/aquietplace.jpeg" alt="copertina a quiet place">
+              </div>
+              <h3>A quiet place</h3>
+              <p>Subtitle</p>
+            </div>
+            <div class="music-box text-center">
+              <div class="album">
+                <img src="img/split.jpeg" alt="copertina album split">
+              </div>
+              <h3>Split</h3>
+              <p>Subtitle</p>
+            </div>
+            <div class="music-box text-center">
+              <div class="album">
+                <img src="img/cure.jpeg" alt="copertina album metal">
+              </div>
+              <h3>A cure for wellness</h3>
+              <p>Subtitle</p>
+            </div>
+            <div class="music-box text-center">
+              <div class="album">
+                <img src="img/sinister.jpeg" alt="copertina album metal">
+              </div>
+              <h3>Sinister</h3>
+              <p>Subtitle</p>
+            </div>
+          </div>
+        </section>
+        <!-- /ascoltate di recente -->
+
+        <!-- playlist utente -->
+        <section class="recently">
+          <h2>Creato per John Doe</h2>
+          <p>Più ascolti, più accurati saranno gli aggiornamenti</p>
+          <div class="song-list">
+            <div class="music-box text-center">
+              <div class="album">
+                <img src="img/radar.jpeg" alt="copertina radar">
+              </div>
+              <h3>Release Radar</h3>
+            </div>
+            <div class="music-box text-center">
+              <div class="album">
+                <img src="img/mixdaily.jpeg" alt="album mix">
+              </div>
+              <h3>Daily Mix 1</h3>
+            </div>
+          </div>
+        </section>
+        <!-- /playlist utente -->
+
+        <!-- popular songs -->
+        <section class="recently popular-songs">
+          <h2>Artisti più popolari</h2>
+          <p>Più ascolti, più accurati saranno gli aggiornamenti</p>
+          <div class="song-list">
+            <div class="music-box text-center">
+              <div class="album">
+                <img src="img/youg.jpeg" alt="copertina young">
+              </div>
+              <h3>Lana del Rey</h3>
+            </div>
+            <div class="music-box text-center">
+              <div class="album">
+                <img src="img/einaudi.jpeg" alt="album Einaudi">
+              </div>
+              <h3>Ludovico Einaudi</h3>
+            </div>
+          </div>
+        </section>
+        <!-- /popular songs -->
+      </main>
+      <!-- /main part -->
+
+      <!-- player bar -->
+      <footer class="player-bar">
+        <!-- canzone in riproduzione -->
+        <div class="song-onair">
+          <div class="song-play">
+            <a href="">
+              <img src="img/europe.jpg" alt="album europe">
+            </a>
+          </div>
+          <div class="titolo">
+            <h5>Europe</h5>
+            <p class="no_wrap">The Final Countdown</p>
+          </div>
+          <div class="song-favorite">
+            <a class="fav_song" href=""><i class="far fa-heart"></i></a>
+            <a class="folder_song" href=""><i class="far fa-folder"></i></a>
+          </div>
+        </div>
+        <!-- /canzone in riproduzione -->
+
+        <!-- durata canzone + player -->
+        <div class="console">
+
+          <!-- player -->
+          <div class="row-btn">
+            <button><i class="fas fa-random"></i></button>
+            <button><i class="fas fa-step-backward"></i></button>
+            <button><i class="far fa-play-circle"></i></button>
+            <button><i class="fas fa-step-forward"></i></button>
+            <button><i class="fas fa-redo-alt"></i></button>
+          </div>
+          <!-- /player -->
+
+          <!-- barra durata canzone -->
+          <div class="row-time-bar">
+
+            <!-- barra tempo trascorso -->
+            <div class="time-passed">0:25</div>
+            <!-- /barra tempo trascorso -->
+
+            <button class="btn-song"><i class="fas fa-circle"></i></button>
+
+            <!-- barra tempo restante -->
+            <div class="song-lenght">4:35</div>
+            <!-- /barra tempo restante -->
+          </div>
+          <!-- /barra durata canzone -->
+        </div>
+        <!-- /durata canzone + player -->
+
+        <!-- controlli audio -->
+        <div class="audio-options">
+          <ul>
+            <li>
+              <button class="no_wrap">
+                <i class="fas fa-ellipsis-v"></i> <i class="fas fa-bars"></i>
+              </button>
+            </li>
+            <li>
+              <button>
+                <i class="fas fa-desktop"></i>
+              </button>
+            </li>
+            <li>
+              <button class="btn-audio">
+                <i class="fas fa-volume-up audio-control"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- /controlli audio -->
+      </footer>
+      <!-- /player bar -->
+    </div>
+    <!--/contenitore full -->
+  </body>
+</html>
